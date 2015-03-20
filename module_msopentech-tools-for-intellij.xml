@@ -25,6 +25,33 @@
     <path refid="library.com.microsoft.azure:azure-management-storage:0.6.0.classpath"/>
     <path refid="library.com.microsoft.azure:azure-management:0.6.0.classpath"/>
     <path refid="library.com.microsoft.azure:azure-storage:1.2.0.classpath"/>
+    
+    <?xml version="1.0" encoding="UTF-8"?>
+<project name="module_msopentech-tools-for-intellij" default="compile.module.msopentech-tools-for-intellij">
+  <dirname property="module.msopentech-tools-for-intellij.basedir" file="${ant.file.module_msopentech-tools-for-intellij}"/>
+  
+  <property name="module.jdk.home.msopentech-tools-for-intellij" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.msopentech-tools-for-intellij" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.msopentech-tools-for-intellij" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.msopentech-tools-for-intellij" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="msopentech-tools-for-intellij.output.dir" value="${module.msopentech-tools-for-intellij.basedir}/out/production/msopentech-tools-for-intellij"/>
+  <property name="msopentech-tools-for-intellij.testoutput.dir" value="${module.msopentech-tools-for-intellij.basedir}/out/test/msopentech-tools-for-intellij"/>
+  
+  <path id="msopentech-tools-for-intellij.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="msopentech-tools-for-intellij.module.production.classpath">
+    <path refid="${module.jdk.classpath.msopentech-tools-for-intellij}"/>
+    <path refid="library.azurecommons.classpath"/>
+    <path refid="library.azuremanagementutil.classpath"/>
+    <path refid="library.projectmanagerlibrary.classpath"/>
+    <path refid="library.com.microsoft.azure:azure-core:0.6.0.classpath"/>
+    <path refid="library.com.microsoft.azure:azure-management-compute:0.6.0.classpath"/>
+    <path refid="library.com.microsoft.azure:azure-management-storage:0.6.0.classpath"/>
+    <path refid="library.com.microsoft.azure:azure-management:0.6.0.classpath"/>
     <path refid="library.antintegration.classpath"/>
     <path refid="library.com.nimbusds:nimbus-jose-jwt:2.11.0.classpath"/>
     <path refid="library.org.apache.httpcomponents:fluent-hc:4.3.5.classpath"/>
